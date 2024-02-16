@@ -41,8 +41,7 @@ Choose your pathway based on your goals and level of experience:
   - Complete all 15 projects as in Level 1.
   - Complete an additional 5 projects of your choice from the remaining videos (totaling 20+ projects).
 
-Remember, the goal is not perfection but progress. Enjoy the journey and don't hesitate to reach out if you have any questions or need assistance.
-
+Remember, the goal is not perfection but persistence. Enjoy the journey!
 Happy coding!
 
 ---
