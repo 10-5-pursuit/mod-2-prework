@@ -41,7 +41,16 @@ Choose your pathway based on your goals and level of experience:
   - Complete all 15 projects as in Level 1.
   - Complete an additional 5 projects of your choice from the remaining videos (totaling 20+ projects).
 
+## File Structure:
+
+All projects in this repository follow the same file structure:
+
+- **HTML files**: Contains the markup for the project.
+- **CSS files**: Contains the styles for the project.
+- **Script.js (in some cases)**: JavaScript code may be embedded in the HTML file or provided in a separate script.js file. 
+
+<br>
+
 Remember, the goal is not perfection but persistence. Enjoy the journey!
 Happy coding!
 
----
