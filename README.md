@@ -1,4 +1,4 @@
-# Prework: Frontend Development Code Along
+# Mod 2 Prework: HTML/CSS/JS Code Along
 
 Welcome to the prework for module 2 of our Full Stack Development training program at Pursuit! This prework is designed to familiarize you with coding dynamic websites using JavaScript and HTML/CSS. You'll be completing a series of mini-projects by following along with the first 15 videos from [30 projects in 30 days](https://www.youtube.com/playlist?list=PLjwm_8O3suyOgDS_Z8AWbbq3zpCmR-WE9).
 
