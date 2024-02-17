@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5dc; /* Cream background color */
+}
+
+.app {
+  background: #e3d8ae; /* Beige background color */
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.app h1 {
+  font-size: 25px;
+  color: #f5f5dc; /* Cream heading color */
+  font-weight: 600;
+  border-bottom: 1px solid #d2b48c; /* Border color */
+  padding-bottom: 30px;
+}
+
+.quiz {
+  padding: 20px 0;
+}
+
+.quiz h2 {
+  font-size: 18px;
+  color: #f5f5dc; /* Cream heading color */
+  font-weight: 600;
+}
+
+.btn {
+  background: #d2b48c; /* Rosemary green background color */
+  color: #f5f5dc; /* Cream text color */
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #d2b48c; /* Border color */
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+  background: #b2ac88; /* Hover background color */
+}
+
+.btn:disabled {
+  cursor: no-drop;
+}
+
+#next-btn {
+  background: #404040; /* Dark grey background color */
+  color: #f5f5dc; /* Cream text color */
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+.correct {
+  background: #e3d8ae; /* Beige correct answer background color */
+}
+
+.incorrect {
+  background: #e3d8ae; /* Beige incorrect answer background color */
+}
+
+.watch-link {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: #b2ac88; /* Rosemary green link color */
+  text-decoration: none;
+}
