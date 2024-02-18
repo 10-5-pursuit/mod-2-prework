@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #b8d8d8; /* Swedish light blue background color */
+  background: #b8d8d8; 
 }
 
 .quote-box {
@@ -35,7 +35,7 @@ body {
   width: 75px;
   height: 3px;
   border-radius: 3px;
-  background: rgb(29, 161, 242); /* Twitter blue */
+  background: rgb(29, 161, 242); 
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -63,7 +63,7 @@ body {
   content: '';
   width: 20px;
   height: 2px;
-  background: rgb(29, 161, 242); /* Twitter blue */
+  background: rgb(29, 161, 242);
   position: absolute;
   top: 50%;
   left: -30px;
@@ -77,10 +77,10 @@ body {
 }
 
 .quote-box button {
-  background: rgb(29, 161, 242); /* Twitter blue */
+  background: rgb(29, 161, 242); 
   color: #fff;
   border-radius: 25px;
-  border: 1px solid rgb(29, 161, 242); /* Twitter blue */
+  border: 1px solid rgb(29, 161, 242); 
   width: 150px;
   height: 50px;
   display: flex;

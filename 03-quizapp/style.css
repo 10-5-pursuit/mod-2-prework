@@ -6,12 +6,12 @@
 }
 
 body {
-  background: #f8f8f8; /* Soft grey background color */
-  color: #333; /* Dark grey text color */
+  background: #f8f8f8; 
+  color: #333; 
 }
 
 .app {
-  background: #eaeaea; /* Light grey background color */
+  background: #eaeaea; 
   width: 90%;
   max-width: 600px;
   margin: 100px auto 0;
@@ -22,9 +22,9 @@ body {
 
 .app h1 {
   font-size: 25px;
-  color: #333; /* Dark grey heading color */
+  color: #333; 
   font-weight: 600;
-  border-bottom: 1px solid #d8b3b3; /* Border color in a muted pink tone */
+  border-bottom: 1px solid #d8b3b3; 
   padding-bottom: 30px;
 }
 
@@ -34,16 +34,16 @@ body {
 
 .quiz h2 {
   font-size: 18px;
-  color: #333; /* Dark grey heading color */
+  color: #333; 
   font-weight: 600;
 }
 
 .btn {
-  background: #d8b3b3; /* Muted pink background color */
-  color: #fff; /* White text color */
+  background: #d8b3b3; 
+  color: #fff; 
   font-weight: 500;
   width: 100%;
-  border: 1px solid #d8b3b3; /* Border color in a muted pink tone */
+  border: 1px solid #d8b3b3; 
   padding: 10px;
   margin: 10px 0;
   text-align: left;
@@ -53,7 +53,7 @@ body {
 }
 
 .btn:hover:not([disabled]) {
-  background: #b38686; /* Darker muted pink on hover */
+  background: #b38686; 
 }
 
 .btn:disabled {
@@ -61,8 +61,8 @@ body {
 }
 
 #next-btn {
-  background: #404040; /* Dark grey background color */
-  color: #f8f8f8; /* Soft grey text color */
+  background: #404040;
+  color: #f8f8f8; 
   font-weight: 500;
   width: 150px;
   border: 0;
@@ -74,17 +74,17 @@ body {
 }
 
 .correct {
-  background: #eaeaea; /* Light grey correct answer background color */
+  background: #eaeaea; 
 }
 
 .incorrect {
-  background: #eaeaea; /* Light grey incorrect answer background color */
+  background: #eaeaea; 
 }
 
 .watch-link {
   position: absolute;
   bottom: 5%;
   right: 5%;
-  color: #d8b3b3; /* Muted pink link color */
+  color: #d8b3b3; 
   text-decoration: none;
 }
