@@ -24,7 +24,7 @@ body {
   font-size: 25px;
   color: #333; /* Dark grey heading color */
   font-weight: 600;
-  border-bottom: 1px solid #b2ac88; /* Border color */
+  border-bottom: 1px solid #d8b3b3; /* Border color in a muted pink tone */
   padding-bottom: 30px;
 }
 
@@ -39,11 +39,11 @@ body {
 }
 
 .btn {
-  background: #b2ac88; /* Rosemary green background color */
+  background: #d8b3b3; /* Muted pink background color */
   color: #fff; /* White text color */
   font-weight: 500;
   width: 100%;
-  border: 1px solid #b2ac88; /* Border color */
+  border: 1px solid #d8b3b3; /* Border color in a muted pink tone */
   padding: 10px;
   margin: 10px 0;
   text-align: left;
@@ -53,7 +53,7 @@ body {
 }
 
 .btn:hover:not([disabled]) {
-  background: #919174; /* Darker rosemary green on hover */
+  background: #b38686; /* Darker muted pink on hover */
 }
 
 .btn:disabled {
@@ -85,6 +85,6 @@ body {
   position: absolute;
   bottom: 5%;
   right: 5%;
-  color: #b2ac88; /* Rosemary green link color */
+  color: #d8b3b3; /* Muted pink link color */
   text-decoration: none;
 }

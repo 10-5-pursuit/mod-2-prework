@@ -8,7 +8,7 @@
 .container {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #fbd3e0, #f9ebbc);
+    background: linear-gradient(135deg, #ced3dc, #a7bbc7);
     color: #333;
     padding: 10px;
 }
@@ -25,14 +25,14 @@
 }
 
 .calculator h1 span {
-    color: #ffafc6;
+    color: #63839a;
 }
 
 .input-box {
     margin: 40px 0;
     padding: 35px;
     border-radius: 10px;
-    background: rgba(255, 228, 230, 0.7);
+    background: rgba(255, 255, 255, 0.8);
     display: flex;
     align-items: center;
 }
@@ -49,13 +49,13 @@
 }
 
 .input-box button {
-    background: #ffafc6;
+    background: #63839a;
     border: 0;
     outline: 0;
     padding: 15px 30px;
     border-radius: 5px;
     font-weight: 500;
-    color: #333;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -77,7 +77,7 @@
 }
 
 #result span {
-    color: #ffafc6;
+    color: #63839a;
 }
 
 .watch-link {

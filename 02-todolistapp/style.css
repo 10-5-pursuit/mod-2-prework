@@ -15,7 +15,7 @@
 .todo-app {
   width: 100%;
   max-width: 540px;
-  background: #fff; /* White background color */
+  background: #f5f5f5; /* Muted ivory background color */
   margin: 100px auto 20px;
   padding: 40px 30px 70px;
   border-radius: 10px;
@@ -38,7 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #f0f0f0; /* Light grey background color */
+  background: #d3e5e3; /* Soft teal background color */
   border-radius: 30px;
   padding-left: 20px;
   margin-bottom: 25px;
@@ -110,5 +110,5 @@ ul li span {
 }
 
 ul li span:hover {
-  background: #f0f0f0; /* Light grey background color */
+  background: #d3e5e3; /* Soft teal background color */
 }
