@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+   <div class="hero">
+       <nav>
+         
+           <ul>
+               <li><a href="">KUNGFU STYLES</a></li>
+               <li><a href="">SERVICES</a></li>
+               <li><a href="">HIRE MY FISTS OF FURY!</a></li>
+           </ul>
+           <img src="images/moon.png" id="icon">
+       </nav>
+       
+       <div class="info">
+           <h1><span>Kung Fu</span> Master</h1>
+           <p>This is my deadly portfolio.</p>
+           <a href="">Download my Awesome CV!</a>
+       </div>
+       
+       <div class="img-box">
+           <img src="images/girl.png" class="main-img">
+       </div>
+       
+       <div class="social-links">
+           <a href=""><i class="fab fa-linkedin-in"></i></a>
+       </div>
+   </div>
+       
+<script>
+    var icon = document.getElementById("icon");
+
+    if(localStorage.getItem("theme") == null){
+        localStorage.setItem("theme", "light");
+    }
+
+    let localData = localStorage.getItem("theme");
+
+    if(localData == "light"){
+        icon.src = "images/moon.png";
+        document.body.classList.remove("dark-theme");
+    }
+    else if(localData == "dark"){
+        icon.src = "images/sun.png";
+        document.body.classList.add("dark-theme");
+    }
+
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "images/sun.png";
+            localStorage.setItem("theme", "dark");
+        }else{
+            icon.src = "images/moon.png";
+            localStorage.setItem("theme", "light");
+        }
+    }
+</script>
+
+</body>
+</html>
