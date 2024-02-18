@@ -8,14 +8,14 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  background: #f5f5dc; /* Cream background color */
+  background: #f8f8f8; /* Light grey background color */
   padding: 10px;
 }
 
 .todo-app {
   width: 100%;
   max-width: 540px;
-  background: #f0ead6; /* Beige background color */
+  background: #fff; /* White background color */
   margin: 100px auto 20px;
   padding: 40px 30px 70px;
   border-radius: 10px;
@@ -23,7 +23,7 @@
 }
 
 .todo-app h2 {
-  color: #495057; /* Heading color */
+  color: #333; /* Dark grey heading color */
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -38,7 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #edeef0; /* Neutral background color */
+  background: #f0f0f0; /* Light grey background color */
   border-radius: 30px;
   padding-left: 20px;
   margin-bottom: 25px;
@@ -48,9 +48,9 @@ input {
   flex: 1;
   border: none;
   outline: none;
-  background: #f5f5dc; /* Cream background color */
-  padding: 12px; /* Increased font size */
-  font-size: 16px; /* Increased font size */
+  background: #f8f8f8; /* Light grey background color */
+  padding: 12px;
+  font-size: 16px;
   font-weight: 14px;
 }
 
@@ -58,7 +58,7 @@ button {
   border: none;
   outline: none;
   padding: 16px 50px;
-  background: #8f9779; /* Rosemary green background color */
+  background: #5ca4a9; /* Soft teal background color */
   color: #fff;
   font-size: 16px;
   cursor: pointer;
@@ -110,5 +110,5 @@ ul li span {
 }
 
 ul li span:hover {
-  background: #edeef0; /* Neutral background color */
+  background: #f0f0f0; /* Light grey background color */
 }
