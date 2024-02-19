@@ -16,8 +16,7 @@
 .calculator {
     width: 100%;
     max-width: 600px;
-    margin-left: 10%;
-    margin-top: 10%;
+    margin: 10% auto; /* Updated margin to center the calculator */
 }
 
 .calculator h1 {
@@ -83,7 +82,8 @@
 .watch-link {
     position: fixed;
     bottom: 10%;
-    right: 5%;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 12px;
     text-decoration: none;
     color: #333;

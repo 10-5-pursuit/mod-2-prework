@@ -12,6 +12,7 @@
     color: #333;
     padding-top: 4%;
     padding-left: 10%;
+    margin: 0 auto; /* Updated to center horizontally */
 }
 
 .container h1 {
