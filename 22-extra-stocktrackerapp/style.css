@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(#1c1917 50%, #ffb92a 50%);
+    background: linear-gradient(#3f3f3f 50%, #dcdcdc 50%); /* German-inspired palette */
 }
 
-.container{
+.container {
     background-color: #fff;
     width: 460px;
     padding: 20px;
@@ -23,19 +23,20 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.container h1{
+.container h1 {
     font-size: 1.7rem;
     text-align: center;
     font-weight: 600;
     margin-bottom: 20px;
+    color: #1c1917; /* Dark color for text */
 }
 
-form{
+form {
     display: flex;
     margin-bottom: 8px;
 }
 
-form input{
+form input {
     flex: 1;
     padding: 6px;
     font-size: 1rem;
@@ -44,7 +45,7 @@ form input{
     outline: none;
 }
 
-form button{
+form button {
     padding: 6px;
     font-size: 1rem;
     border: none;
@@ -55,15 +56,15 @@ form button{
     transition: all 0.3s ease;
 }
 
-form button:hover{
+form button:hover {
     background-color: #ce8b00;
 }
 
-#stock-list{
+#stock-list {
     list-style: none;
 }
 
-#stock-list li{
+#stock-list li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,10 +72,10 @@ form button:hover{
     border-bottom: 1px solid #ccc;
 }
 
-#stock-list li:last-child{
+#stock-list li:last-child {
     border-bottom: none;
 }
 
-li.error{
+li.error {
     color: red;
 }

@@ -4,7 +4,7 @@ const stockList = document.querySelector('#stock-list');
 // Function to fetch and display the top 10 stocks
 function fetchTopStocks() {
     // Fetch data from api
-    fetch('https://www.alphavantage.co/query?function=SECTOR&apikey=RGF4TGCG8QHDP525').then(response => response.json()).then(data => {
+    fetch('https://www.alphavantage.co/query?function=SECTOR&apikey=YOUR_API_KEY').then(response => response.json()).then(data => {
         const stocks = data['Rank A: Real-Time Performance'];
         let html = '';
         // Loop through the stocks and generate html for each stock
@@ -34,7 +34,7 @@ function fetchStockData(symbol) {
     }
 
     // Fetch the stock data for the provided symbol from api
-    fetch(`https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=RGF4TGCG8QHDP525`).then(response => response.json()).then(data => {
+    fetch(`https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=YOUR_API_KEY`).then(response => response.json()).then(data => {
         const quote = data['Global Quote'];
         if (quote && quote['10. change percent']) {
             const changePercent = quote['10. change percent'].replace('%', '');
