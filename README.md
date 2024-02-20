@@ -52,5 +52,4 @@ All projects in this repository follow the same file structure:
 <br>
 
 Remember, the goal is not perfection but persistence. Enjoy the journey!
-Happy coding!
 
