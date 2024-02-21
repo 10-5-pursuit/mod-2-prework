@@ -15,7 +15,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     padding: 0 10px;
-    background: #f7f7f7; /* Sakura White */
+    background: #f7f7f7; 
     overflow: hidden;
 }
 
@@ -24,7 +24,7 @@ body::before {
     position: absolute;
     width: 120px;
     height: 120px;
-    background-color: #ffaec0; /* Sakura Pink */
+    background-color: #ffaec0; 
     left: 15%;
     top: 20%;
     filter: blur(150px);
@@ -35,7 +35,7 @@ body::after {
     position: absolute;
     width: 120px;
     height: 120px;
-    background-color: #2d5d7a; /* Indigo Blue */
+    background-color: #2d5d7a; 
     left: 80%;
     top: 74%;
     filter: blur(150px);
@@ -43,8 +43,8 @@ body::after {
 
 .container {
     width: 25rem;
-    color: #333; /* Charcoal Gray */
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent White */
+    color: #333; 
+    background: rgba(255, 255, 255, 0.9); 
     padding: 20px 30px;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -75,18 +75,18 @@ body::after {
     font-size: 1rem;
     padding: 0 15px;
     background: transparent;
-    color: #333; /* Charcoal Gray */
-    border: 1px solid #666; /* Dark Gray */
+    color: #333; 
+    border: 1px solid #666; 
     transition: all 0.3s ease;
 }
 
 .container form input:hover {
-    border: 1px solid #675afe; /* Dodger Blue */
+    border: 1px solid #675afe; 
 }
 
 .container form input:focus {
     padding: 0 14px;
-    border: 1px solid #675afe; /* Dodger Blue */
+    border: 1px solid #675afe; 
 }
 
 .container form .convert-box {
@@ -105,7 +105,7 @@ body::after {
 .container .convert-box .select-input {
     display: flex;
     width: 100%;
-    border: 1px solid #666; /* Dark Gray */
+    border: 1px solid #666; 
     height: 40px;
     align-items: center;
     border-radius: 5px;
@@ -116,7 +116,7 @@ body::after {
 }
 
 .container .convert-box .select-input:hover {
-    border: 1px solid #675afe; /* Dodger Blue */
+    border: 1px solid #675afe; 
 }
 
 .container .convert-box .select-input img {
@@ -129,7 +129,7 @@ body::after {
     font-size: 1rem;
     background: none;
     margin: 0 -5px 0 5px;
-    color: #333; /* Charcoal Gray */
+    color: #333; 
 }
 
 .container .convert-box .select-input select option {
@@ -145,7 +145,7 @@ body::after {
 }
 
 .container .convert-box .reverse:hover {
-    color: #675afe; /* Dodger Blue */
+    color: #675afe; 
 }
 
 .container form .result {
@@ -157,7 +157,7 @@ body::after {
     width: 100%;
     height: 42px;
     color: #fff;
-    background: #333; /* Charcoal Gray */
+    background: #333; 
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
@@ -165,5 +165,5 @@ body::after {
 }
 
 .container form button:hover {
-    background: #675afe; /* Dodger Blue */
+    background: #675afe; 
 }

@@ -2,28 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.app {
+  }
+  
+  .app {
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-family: "Montserrat", sans-serif;
-}
-
-.time-select,
-.sound-picker {
+  }
+  
+  .time-select,
+  .sound-picker {
     height: 80%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     flex: 1;
-}
-
-.time-select button,
-.sound-picker button {
+  }
+  .time-select button,
+  .sound-picker button {
     color: white;
     width: 30%;
     height: 10%;
@@ -33,35 +32,31 @@
     cursor: pointer;
     border: 2px solid white;
     transition: all 0.5s ease;
-}
-
-.sound-picker button {
+  }
+  
+  .sound-picker button {
     border: none;
     height: 120px;
     width: 120px;
     padding: 30px;
     border-radius: 50%;
-    position: relative; /* Add this line */
-}
-
-.sound-picker button:nth-child(1) {
+  }
+  .sound-picker button:nth-child(1) {
     background: #4972a1;
-}
-
-.sound-picker button:nth-child(2) {
+  }
+  .sound-picker button:nth-child(2) {
     background: #a14f49;
-}
-
-.sound-picker button img {
+  }
+  .sound-picker button img {
     height: 100%;
-}
-
-.time-select button:hover {
+  }
+  
+  .time-select button:hover {
     background: white;
     color: black;
-}
-
-.player-container {
+  }
+  
+  .player-container {
     position: relative;
     height: 80%;
     display: flex;
@@ -69,39 +64,30 @@
     align-items: center;
     flex-direction: column;
     flex: 1;
-}
-
-.player-container svg {
+  }
+  
+  .player-container svg {
     position: absolute;
-    height: 50%;
-    top: 50%;
+    height: 38%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-90deg);
     pointer-events: none;
-}
-
-.player-container svg circle {
+  }
+  .player-container svg circle {
     transition: all 0.2s ease-in-out;
-}
-
-/* Add the following CSS for the arrow in the middle of the circle */
-.player-container svg line {
-    stroke: white;
-    stroke-width: 3;
-    stroke-linecap: round;
-}
-
-.time-display {
+  }
+  .time-display {
     color: white;
     position: absolute;
     font-size: 50px;
     bottom: 10%;
-}
-
-video {
+  }
+  
+  video {
     position: fixed;
     top: 0%;
     left: 0%;
     width: 100%;
     z-index: -10;
-}
+  }

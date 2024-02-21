@@ -8,17 +8,18 @@
 body {
   height: 100vh;
   background: linear-gradient(#282c35 50%, #14161c 50%);
+  margin: 0;
 }
 
 .container {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 70%;
   left: 50%;
-  width: 90vw;
+  width: 100%;
   max-width: 37.5em;
   background-color: #ffffff;
-  padding: 1.8em;
+  padding: 1em 1em 1em;
   border-radius: 0.6em;
   box-shadow: 0 1em 3em rgba(20, 22, 28, 0.25);
 }
