@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: #edf2fc;
+    font-family: sans-serif ;
+    position: relative;
+
+}
