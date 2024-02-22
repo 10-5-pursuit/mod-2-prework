@@ -22,9 +22,17 @@
             <h1>Despacito</h1>
             <p>Luis Fonsi Ft. Puerto Rican</p>
 
-            <audio controls>
-                <source src="media/Go-NEFFEX.mp3" type="audio/mpeg">
+            <audio id="song">
+                <source src="media/Funky Carioca - Quincas Moreira.mp3" type="audio/mpeg">
             </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+
         </div>
     </div>
     
