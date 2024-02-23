@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Scroll Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery-wrap">
+        <img src="images/back.png" id="backBtn">
+        <div class="gallery">
+            <div>
+                <span><img src="images/anders-jilden-GjwsHRIcQjU-unsplash.jpg"></span>
+                <span><img src="images/canmandawe-3iaV4wNnzks-unsplash.jpg"></span>
+                <span><img src="images/chuttersnap-oKfCxcKnCo8-unsplash.jpg"></span>
+            </div>
+            <div>
+                <span><img src="images/cristina-gottardi-JiLTJODH5j4-unsplash.jpg"></span>
+                <span><img src="images/federico-beccari-cyg3DD6Y69A-unsplash.jpg"></span>
+                <span><img src="images/geranimo-bKhETeDV1WM-unsplash.jpg"></span>
+            </div>
+            <div>
+                <span><img src="images/greg-rakozy-0LU4vO5iFpM-unsplash.jpg"></span>
+                <span><img src="images/josh-carter-PO7hiRY1DlA-unsplash.jpg"></span>
+                <span><img src="images/justin-kauffman-lbybdXUYWRs-unsplash.jpg"></span>
+            </div>
+            <div>
+                <span><img src="images/michael-durana-sYegwYtIqJg-unsplash.jpg"></span>
+                <span><img src="images/nasa-NuE8Nu3otjo-unsplash.jpg"></span>
+                <span><img src="images/nitish-meena-RbbdzZBKRDY-unsplash.jpg"></span>
+            </div>
+            <div>
+                <span><img src="images/painting-mountain-lake-with-mountain-background.jpg"></span>
+                <span><img src="images/pexels-brett-sayles-1322185.jpg"></span>
+                <span><img src="images/pexels-david-besh-884788.jpg"></span>
+            </div>
+            <div>
+                <span><img src="images/pexels-louis-2101187.jpg"></span>
+                <span><img src="images/pexels-min-an-1454794.jpg"></span>
+                <span><img src="images/pexels-min-an-1406866.jpg"></span>
+            </div>
+            <div>
+                <span><img src="images/pexels-pixabay-36717.jpg"></span>
+                <span><img src="images/pexels-pok-rie-268261.jpg"></span>
+                <span><img src="images/pexels-scott-webb-305821.jpg"></span>
+            </div>
+            <div>
+                <span><img src="images/pexels-sohail-nachiti-807598.jpg"></span>
+                <span><img src="images/pexels-stein-egil-liland-1933239.jpg"></span>
+                <span><img src="images/rowan-heuvel-YJZzNdMLzF8-unsplash.jpg"></span>
+            </div>
+            <div>
+                <span><img src="images/sebastian-molina-fotografia-natjj0CTa-s-unsplash.jpg"></span>
+                <span><img src="images/thiago-gomes-K0YuYMAwCTQ-unsplash.jpg"></span>
+                <span><img src="images/willian-justen-de-vasconcellos-ASKGjAeIY_U-unsplash.jpg"></span>
+            </div>
+        </div>
+        <img src="images/next.png" id="nextBtn">
+    </div>
+
+    <script>
+        let scrollContainer = document.querySelector('.gallery');
+        let backBtn = document.getElementById('backBtn');
+        let nextBtn = document.getElementById('nextBtn');
+
+        scrollContainer.addEventListener('wheel', (evt) =>{
+            evt.preventDefault();
+            scrollContainer.scrollLeft +=evt.deltaY;
+            scrollContainer.style.scrollBehavior = "auto"
+        });
+
+        nextBtn.addEventListener('click',()=>{
+            scrollContainer.style.scrollBehavior = "smooth"
+            scrollContainer.scrollLeft +=900;
+        });
+        backBtn.addEventListener('click',()=>{
+            scrollContainer.style.scrollBehavior = "smooth"
+            scrollContainer.scrollLeft +=900;
+        })
+
+
+    </script>
+</body>
+</html>
