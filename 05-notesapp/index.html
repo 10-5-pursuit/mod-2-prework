@@ -1,33 +1,28 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
+    <div id="container">
 
-    <div class="container">
-        <h1><img src="images/notes.png"> Rizel's Pursuit Notes</h1>
-        <button class="btn"><img src="images/edit.png"> Create Notes</button>
-        <div class="notes-container">
-            <div class="input-box">
-                <div class="note-header">
-                    <input type="text" class="date-entry" placeholder="Date">
-                    <hr class="line">
-                </div>
-                <textarea placeholder="Write your note here..." rows="4"></textarea>
-                <img src="images/delete.png">
+        <div id="list-header">
+            <div id="addNoteDiv" onclick="popup()">
+                <i class="fa-solid fa-plus"></i>
             </div>
+            <div class="blankDiv"></div>
+            <div class="blankDiv"></div>
+        </div>
+        
+        <div id="list-container">
+            <ul id="notes-list"></ul>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
-
 </html>
-
-
-

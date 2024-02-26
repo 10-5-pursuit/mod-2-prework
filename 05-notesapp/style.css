@@ -1,103 +1,220 @@
-* {
-    margin: 0;
-    padding: 0;
+/* Main CSS */
+body {
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-}
-
-.container {
-    width: 100%;
+    background-color: #b0a496; 
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #f0f0f0, #666666);
-    color: #333;
-    padding-top: 4%;
-    padding-left: 10%;
-    margin: 0 auto; /* Updated to center horizontally */
 }
 
-.container h1 {
-    display: flex;
-    align-items: center;
-    font-size: 35px;
-    font-weight: 600;
-}
-
-.container h1 img {
-    width: 50px;
-}
-
-.container button img {
-    width: 25px;
-    margin-right: 8px;
-}
-
-.container button {
-    display: flex;
-    align-items: center;
-    background: linear-gradient(#666666, #999999);
-    color: #fff;
-    font-size: 16px;
-    outline: 0;
-    border: 0;
-    border-radius: 40px;
-    padding: 15px 25px;
-    margin: 30px 0 20px;
-    cursor: pointer;
-}
-
-.input-box {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-    background: #fff;
-    color: #333;
+#container {
+    background-color: #f7f7f7; 
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 827px;
+    height: 600px;
     padding: 20px;
-    margin: 20px 0;
-    outline: none;
-    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
 }
 
-.note-header {
-    margin-bottom: 15px;
+#list-header {
+    display: flex;
+    align-items: left;
+    justify-content: left;
 }
 
-.date-entry {
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
+.blankDiv {
+    background-color: #f7f7f7; 
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.line {
-    border: 0;
-    height: 1px;
-    background-color: #333;
-    margin: 10px 0;
+#addNoteDiv {
+    background-color: #e1e1e1; 
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addNoteDiv:hover {
+    transition: 0.25s;
+    background-color: #d4d4d4; 
+}
+
+#addNoteDiv i {
+    font-size: 70px;
+    color: #b0a496; 
+}
+
+/* List CSS */
+#list-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+li {
+    background-color: ##b0a496; 
+    margin: 5px 0;
+    padding: 20px;
+    border-radius: 8px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow:  9px 9px 18px #b3b3b3,
+             -9px -9px 18px #ffffff;
+}
+
+li span {
+    font-size: 12px;
+    flex-grow: 1;
+    word-wrap: break-word;
+    overflow-y: scroll;
+}
+
+#editBtn,
+#deleteBtn {
+    background-color: #a4897d; 
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px; 
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 60px;
+}
+
+#editBtn {
+    background-color: #d4c3b3; 
+}
+
+#deleteBtn:hover {
+    background-color: #6e4e40; 
+}
+
+#editBtn:hover {
+    background-color: #8c7a6d; 
+}
+
+/* Create Note Popup CSS */
+#popupContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 textarea {
-    width: 100%;
-    border: none;
-    outline: none;
-    resize: none;
-    font-size: 16px;
+    width: 300px;
+    height: 200px;
+    margin: 10px 0;
     padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid #b0a496;
+}
+
+#btn-container {
+    display: flex;
+}
+
+#submitBtn, #closeBtn {
+    width: 100px;
+    background-color: #b0a496;
+    color: #fff;
+    font-size: 14px;
+    border: none;
     border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.input-box img {
-    width: 25px;
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
+    padding: 10px;
     cursor: pointer;
+    margin: 10px;
 }
 
-.watch-link {
-    position: fixed;
-    bottom: 10%;
-    right: 5%;
-    font-size: 12px;
-    text-decoration: none;
-    color: #333;
+#closeBtn {
+    background-color: #b0a496;
+}
+
+/* Editing Popup CSS */
+#editing-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#submitBtn,
+#closeBtn {
+    width: 100px;
+    background-color: #b0a496;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#closeBtn {
+    background-color: #b0a496; 
 }
